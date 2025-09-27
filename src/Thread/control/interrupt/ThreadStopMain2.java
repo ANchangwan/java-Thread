@@ -13,7 +13,7 @@ public class ThreadStopMain2 {
         Thread thread = new Thread(task, "work");
         thread.start();
 
-        sleep(2000);
+        sleep(4000);
         log("작업 중단 지시 thread.interrupt()");
         thread.interrupt();
         log("work 스레드 인터럽트 상태1=" + thread.isInterrupted());
